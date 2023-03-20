@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.form {
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    align-items: center;
+    border-radius: 1px solid black;
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    height: 200px;
+    justify-content: space-evenly;
+    overflow: hidden;
+    min-height: 300px;
+
+
+}
+
+.form:hover{
+    border-color: white;
+} .form input {
+    width: 90%;
+    height: 28px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all .4s ease;
+
+
+}
+
+.showdata {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin: auto; */
+    overflow: hidden;
+    margin-top: 30px;
+
+
+}
+
+.showdata_element {
+    font-size: 1.3rem;
+    border: 1px solid rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: .3fr 1.3fr .3fr 1fr .7fr .5fr;
+
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 80%;
+    align-items: center;
+    justify-items: start;
+    border-radius: 1px solid black;
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: all .4s ease;
+
+
+
+
+}
+.showdata_element:hover,.form input:hover{
+    transform: translate3D(0,-1px,0) scale(1.1);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 5px;
+    width: 80px;
+    height: 30px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(0, 42, 255);
+    color: white;
+}
+@media only screen and (max-width:980px){
+    .showdata_element{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:790px){
+    .showdata_element{
+        width: 300px;
+        height: 250px;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        flex-direction: row;
+    }
+    .date{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .id{
+        display: none;
+    }
+}

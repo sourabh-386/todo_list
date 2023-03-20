@@ -1,0 +1,8 @@
+body{
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    color: white;
+    scroll-behavior: smooth;
+  /* background-repeat: no-repeat; */
+  /* background-size:100%; */
+  /* background-size: contain; */
+}
